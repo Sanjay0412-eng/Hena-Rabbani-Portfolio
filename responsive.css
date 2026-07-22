@@ -1,0 +1,311 @@
+/* ==========================================
+   RESPONSIVE DESIGN
+========================================== */
+
+/* Large Laptop */
+
+@media (max-width:1400px){
+
+.container{
+    width:min(94%,1200px);
+}
+
+.hero h1{
+    font-size:64px;
+}
+
+}
+
+/* Laptop */
+
+@media (max-width:1200px){
+
+.hero-grid{
+
+grid-template-columns:1fr;
+
+gap:70px;
+
+text-align:center;
+
+}
+
+.project-grid,
+.skills-grid{
+
+grid-template-columns:repeat(2, 1fr);
+
+}
+
+.hero p{
+
+margin:auto;
+
+}
+
+.hero-buttons{
+
+justify-content:center;
+
+}
+
+.stats{
+
+justify-content:center;
+
+}
+
+.about-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.company-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.section-title h2{
+
+font-size:42px;
+
+}
+
+}
+
+/* Tablet */
+
+@media (max-width:992px){
+
+.navbar{
+
+top:15px;
+
+width:95%;
+
+}
+
+.navbar .container{
+
+padding:15px 20px;
+
+}
+
+nav ul{
+
+gap:20px;
+
+}
+
+.hero{
+
+padding-top:150px;
+
+}
+
+.hero h1{
+
+font-size:56px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+.stats{
+
+gap:30px;
+
+flex-wrap:wrap;
+
+}
+
+.section{
+
+padding:90px 0;
+
+}
+
+.company-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+.project-grid,
+.skills-grid{
+
+grid-template-columns:1fr;
+
+}
+
+nav{
+
+display:none;
+
+}
+
+.hero h1{
+
+font-size:46px;
+
+}
+
+.hero-buttons{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+.hero-buttons a{
+
+width:100%;
+
+max-width:320px;
+
+text-align:center;
+
+}
+
+.stats{
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+.section-title h2{
+
+font-size:34px;
+
+}
+
+.about-grid h3{
+
+font-size:34px;
+
+}
+
+.image-card{
+
+max-width:420px;
+
+margin:auto;
+
+}
+
+}
+
+/* Small Mobile */
+
+@media (max-width:576px){
+
+.hero{
+
+padding-top:130px;
+
+}
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+.hero p{
+
+font-size:16px;
+
+}
+
+.badge{
+
+font-size:.8rem;
+
+}
+
+.section{
+
+padding:70px 0;
+
+}
+
+.section-title{
+
+margin-bottom:45px;
+
+}
+
+.section-title h2{
+
+font-size:30px;
+
+}
+
+.company-card{
+
+padding:30px;
+
+}
+
+.about-card{
+
+padding:30px;
+
+}
+
+.btn,
+
+.btn-outline{
+
+padding:15px 25px;
+
+}
+
+}
+
+/* Very Small */
+
+@media (max-width:400px){
+
+.hero h1{
+
+font-size:32px;
+
+}
+
+.logo{
+
+font-size:20px;
+
+}
+
+.theme-btn{
+
+width:42px;
+
+height:42px;
+
+}
+
+.stats h2{
+
+font-size:34px;
+
+}
+
+}

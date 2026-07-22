@@ -1,0 +1,347 @@
+/* ==========================================
+   ANIMATIONS
+========================================== */
+
+*{
+
+transition:
+
+background .35s ease,
+
+color .35s ease,
+
+border .35s ease,
+
+transform .35s ease,
+
+opacity .35s ease;
+
+}
+
+/* Fade Up */
+
+.fade-up{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+.fade-up.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+/* Fade Left */
+
+.fade-left{
+
+opacity:0;
+
+transform:translateX(-60px);
+
+}
+
+.fade-left.show{
+
+opacity:1;
+
+transform:translateX(0);
+
+}
+
+/* Fade Right */
+
+.fade-right{
+
+opacity:0;
+
+transform:translateX(60px);
+
+}
+
+.fade-right.show{
+
+opacity:1;
+
+transform:translateX(0);
+
+}
+
+/* Zoom */
+
+.zoom{
+
+opacity:0;
+
+transform:scale(.8);
+
+}
+
+.zoom.show{
+
+opacity:1;
+
+transform:scale(1);
+
+}
+
+/* Hero */
+
+.hero-content{
+
+animation:slideUp 1s ease;
+
+}
+
+.hero-image{
+
+animation:floatImage 6s ease-in-out infinite;
+
+}
+
+@keyframes slideUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(80px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+@keyframes floatImage{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-15px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+/* Company Card */
+
+.company-card{
+
+cursor:pointer;
+
+}
+
+.company-card:hover{
+
+transform:
+
+translateY(-10px)
+
+scale(1.02);
+
+}
+
+/* About Card */
+
+.about-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+/* Buttons */
+
+.btn:hover{
+
+box-shadow:
+
+0 20px 40px rgba(0,0,0,.12);
+
+}
+
+.btn-outline:hover{
+
+transform:translateY(-4px);
+
+}
+
+/* Navbar */
+
+.navbar{
+
+transition:.4s;
+
+}
+
+.navbar.scrolled{
+
+background:rgba(255,255,255,.92);
+
+backdrop-filter:blur(25px);
+
+}
+
+/* Image */
+
+.image-card{
+
+overflow:hidden;
+
+}
+
+.image-card img{
+
+transition:1s;
+
+}
+
+.image-card:hover img{
+
+transform:scale(1.04);
+
+}
+
+/* Underline */
+
+nav a{
+
+position:relative;
+
+}
+
+nav a::after{
+
+content:"";
+
+position:absolute;
+
+bottom:-6px;
+
+left:0;
+
+width:0;
+
+height:2px;
+
+background:#B48A4A;
+
+transition:.35s;
+
+}
+
+nav a:hover::after{
+
+width:100%;
+
+}
+
+/* Floating */
+
+@keyframes floating{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-12px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+.float{
+
+animation:floating 5s infinite ease-in-out;
+
+}
+
+/* Pulse */
+
+@keyframes pulse{
+
+0%{
+
+transform:scale(1);
+
+}
+
+50%{
+
+transform:scale(1.05);
+
+}
+
+100%{
+
+transform:scale(1);
+
+}
+
+}
+
+.pulse{
+
+animation:pulse 2s infinite;
+
+}
+
+/* Rotate */
+
+.rotate:hover{
+
+transform:rotate(4deg);
+
+}
+
+/* Card */
+
+.company-card,
+
+.about-card,
+
+.image-card{
+
+transition:.45s;
+
+}
+
+/* Smooth */
+
+html{
+
+scroll-behavior:smooth;
+
+}
